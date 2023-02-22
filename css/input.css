@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* global css */
+html {
+    /* Introductory Paragraph */
+    font-size: 15px;
+}
