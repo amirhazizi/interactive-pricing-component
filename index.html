@@ -34,7 +34,7 @@
       <!-- content -->
       <div class="bg-white rounded-xl pt-4">
         <!-- form container -->
-        <form class="">
+        <form>
           <!-- input contaienr -->
           <div class="border-b p-5 text-center space-y-8">
             <!-- header -->
@@ -43,13 +43,13 @@
             </p>
             <!-- slider -->
             <input
-              class="w-full"
+              class="relative w-full bg-clLightGrayishBlue rounded-lg after:rounded-lg after:h-full after:bg-clSoftCyan after:absolute after:top-0 after:left-0"
               min="1"
               max="5"
-              value="2"
+              value="1"
               type="range"
               name=""
-              id=""
+              id="slider"
             />
             <!-- result preview -->
             <div class="flex items-center justify-center space-x-2">
@@ -58,7 +58,7 @@
               ><span class="text-clGrayishBlue">/ month</span>
             </div>
             <!-- switch toggler container -->
-            <div class="flex items-center justify-end space-x-2 w-full">
+            <div class="flex items-center justify-end sm:p-5 space-x-2 w-full">
               <!-- mounthly label -->
               <label class="text-sm text-clGrayishBlue" for=""
                 >Monthly Billing</label
@@ -69,7 +69,7 @@
                 <input class="opacity-0 w-0 h-0" type="checkbox" />
                 <!-- switch overlay -->
                 <span
-                  class="slider bg-clPaleBlue cursor-pointer absolute inset-0 rounded-full before:rounded-full before:absolute before:left-0 before:top-0 before:bg-white"
+                  class="checkbox-slider bg-clPaleBlue cursor-pointer absolute inset-0 rounded-full before:rounded-full before:absolute before:left-0 before:top-0 before:bg-white"
                 ></span>
               </label>
               <!-- yearly label -->
