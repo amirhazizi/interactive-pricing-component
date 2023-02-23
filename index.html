@@ -18,17 +18,14 @@
     <link rel="stylesheet" href="./css/fonts.css" />
   </head>
   <body class="bg-clVeryPaleBlue min-h-screen grid place-content-center">
-    <main class="space-y-2 mx-auto p-4">
+    <main class="space-y-2 mx-auto p-4 md:space-y-12">
       <!-- header container -->
       <div class="header text-center space-y-3 grid place-content-center">
-        <h1 class="text-clDarkDesaturatedBlue text-xl font-bold">
+        <h1 class="text-clDarkDesaturatedBlue text-xl font-bold md:text-3xl">
           Simple, traffic-based pricing
         </h1>
-        <p
-          class="text-clGrayishBlue max-w-xs text-sm mx-auto leading-6 font-semibold"
-        >
-          Sign-up for our 30-day trial.<br />
-          No credit card required.
+        <p class="text-clGrayishBlue text-sm mx-auto leading-6 font-semibold">
+          Sign-up for our 30-day trial. No credit card required.
         </p>
       </div>
       <!-- content -->
@@ -36,11 +33,22 @@
         <!-- form container -->
         <form>
           <!-- input contaienr -->
-          <div class="border-b p-5 text-center space-y-8">
+          <div
+            class="border-b p-5 text-center space-y-8 md:space-y-14 md:p-9 md:px-14"
+          >
             <!-- header -->
-            <p class="uppercase font-bold text-clGrayishBlue">
-              <span>100</span>K Pageviews
-            </p>
+            <div class="md:flex md:justify-between md:items-center">
+              <p class="uppercase font-bold text-clGrayishBlue md:text-xl">
+                <span>100</span>K Pageviews
+              </p>
+              <!-- result preview -->
+              <div class="hidden md:flex items-center justify-center space-x-2">
+                <span
+                  class="text-2xl font-bold text-clDarkDesaturatedBlue md:text-5xl"
+                  >$16.00</span
+                ><span class="text-clGrayishBlue">/ month</span>
+              </div>
+            </div>
             <!-- slider -->
             <input
               class="relative w-full bg-clLightGrayishBlue rounded-lg after:rounded-lg after:h-full after:bg-clSoftCyan after:absolute after:top-0 after:left-0"
@@ -52,13 +60,13 @@
               id="slider"
             />
             <!-- result preview -->
-            <div class="flex items-center justify-center space-x-2">
-              <span class="text-2xl font-bold text-clDarkDesaturatedBlue"
+            <div class="flex md:hidden items-center justify-center space-x-2">
+              <span class="text-4xl font-bold text-clDarkDesaturatedBlue"
                 >$16.00</span
               ><span class="text-clGrayishBlue">/ month</span>
             </div>
             <!-- switch toggler container -->
-            <div class="flex items-center justify-end sm:p-5 space-x-2 w-full">
+            <div class="flex items-center justify-end p-2 space-x-2 w-full">
               <!-- mounthly label -->
               <label class="text-sm text-clGrayishBlue" for=""
                 >Monthly Billing</label
@@ -86,23 +94,31 @@
             </div>
           </div>
           <!-- advantages -->
-          <div class="text-center py-8 space-y-10">
+          <div
+            class="text-center py-8 space-y-10 flex flex-col md:flex-row md:items-center md:space-y-0 md:space-x-4 md:justify-between md:px-12"
+          >
             <!-- container -->
             <div class="flex flex-col space-y-3">
               <!-- adventage 1 -->
-              <div class="flex items-center space-x-4 justify-center">
+              <div
+                class="flex items-center space-x-4 justify-center md:text-left md:justify-start"
+              >
                 <img src="./images/icon-check.svg" alt="icon-check.svg" />
                 <p class="text-sm text-clGrayishBlue">Unlimited websites</p>
               </div>
               <!-- end of adventage 1 -->
               <!-- adventage 2 -->
-              <div class="flex items-center space-x-4 justify-center">
+              <div
+                class="flex items-center space-x-4 justify-center md:text-left md:justify-start"
+              >
                 <img src="./images/icon-check.svg" alt="icon-check.svg" />
                 <p class="text-sm text-clGrayishBlue">100% data ownership</p>
               </div>
               <!-- end of adventage 2 -->
               <!-- adventage 3 -->
-              <div class="flex items-center space-x-4 justify-center">
+              <div
+                class="flex items-center space-x-4 justify-center md:text-left md:justify-start"
+              >
                 <img src="./images/icon-check.svg" alt="icon-check.svg" />
                 <p class="text-sm text-clGrayishBlue">Email reports</p>
               </div>
