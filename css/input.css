@@ -7,3 +7,53 @@ html {
     /* Introductory Paragraph */
     font-size: 15px;
 }
+
+/* actual css */
+body {
+    background: url('../images/bg-pattern.svg') no-repeat;
+}
+
+main {
+    width: 95vw;
+    max-width: 450px;
+
+}
+
+.header {
+    background: url('../images/pattern-circles.svg') center/35% no-repeat;
+    height: 12rem;
+}
+
+.header h1 {
+    font-size: 1.4rem;
+}
+
+/* switch toggle */
+.switch {
+    width: 3.6rem;
+    height: 1.8rem;
+}
+
+.slider {
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider::before {
+    height: 1.2rem;
+    width: 1.2rem;
+    transform: translate(30%, 25%);
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    transform: translate(175%, 25%);
+}

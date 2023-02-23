@@ -12,15 +12,67 @@
     />
 
     <title>Frontend Mentor | Interactive pricing component</title>
-    <!-- fonts.css -->
-    <link rel="stylesheet" href="./css/fonts.css" />
     <!-- style.css -->
     <link rel="stylesheet" href="./css/styles.css" />
+    <!-- fonts.css -->
+    <link rel="stylesheet" href="./css/fonts.css" />
   </head>
-  <body>
-    Simple, traffic-based pricing Sign-up for our 30-day trial. No credit card
-    required. Pageviews $ /month Monthly Billing Yearly Billing 25% discount
-    Unlimited websites 100% data ownership Email reports Start my trial
+  <body class="bg-clVeryPaleBlue min-h-screen grid place-content-center">
+    <main class="space-y-2 mx-auto p-4">
+      <!-- header container -->
+      <div class="header text-center space-y-3 grid place-content-center">
+        <h1 class="text-clDarkDesaturatedBlue text-xl font-bold">
+          Simple, traffic-based pricing
+        </h1>
+        <p
+          class="text-clGrayishBlue max-w-xs text-sm mx-auto leading-6 font-semibold"
+        >
+          Sign-up for our 30-day trial.<br />
+          No credit card required.
+        </p>
+      </div>
+      <!-- content -->
+      <div class="bg-white">
+        <form class="text-center p-5 space-y-5" action="">
+          <p class="uppercase font-bold text-clGrayishBlue">100K Pageviews</p>
+          <input
+            class="w-full"
+            min="1"
+            max="5"
+            value="2"
+            type="range"
+            name=""
+            id=""
+          />
+          <div class="flex items-center justify-center space-x-2">
+            <span class="text-2xl font-bold text-clDarkDesaturatedBlue"
+              >$16.00</span
+            ><span class="text-clGrayishBlue">/ month</span>
+          </div>
+          <div class="flex items-center justify-end space-x-2">
+            <label class="text-sm text-clGrayishBlue" for=""
+              >Monthly Billing</label
+            >
+            <label class="switch relative inline-block">
+              <input class="opacity-0 w-0 h-0" type="checkbox" />
+              <span
+                class="slider bg-clPaleBlue cursor-pointer absolute inset-0 rounded-full before:rounded-full before:absolute before:left-0 before:top-0 before:bg-white"
+              ></span>
+            </label>
+            <label class="text-sm text-clGrayishBlue" for=""
+              >Yearly Billing</label
+            >
+            <p
+              class="text-clLightRed text-xs bg-clLightRed bg-opacity-20 p-px px-2 rounded-full"
+            >
+              %25
+            </p>
+          </div>
+        </form>
+      </div>
+    </main>
+    Pageviews $ /month 25% discount Unlimited websites 100% data ownership Email
+    reports Start my trial
 
     <!-- footer -->
     <footer

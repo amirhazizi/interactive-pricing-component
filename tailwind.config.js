@@ -19,8 +19,8 @@ module.exports = {
         clLightRed: "hsl(15, 100%, 70%)", // Discount Text
         clPaleBlue: "hsl(226, 100%, 87%)", // CTA Text
         // ### Neutral
-        clWhite: "hsl (0, 0%, 100%)", // Pricing Component Background
         clVeryPaleBlue: "hsl(230, 100%, 99%)", // Main Background
+        cl_white: "hsl (0, 0%, 100%)", // Pricing Component Background
         clLightGrayishBlue: "hsl(224, 65%, 95%)", // Empty Slider Bar
         clLightGrayishBlue: "hsl(223, 50%, 87%)", // Toggle Background
         clGrayishBlue: "hsl(225, 20%, 60%)", // Text
