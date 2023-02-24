@@ -31,7 +31,7 @@
       <!-- content -->
       <div class="bg-white rounded-xl pt-4">
         <!-- form container -->
-        <form>
+        <form id="form">
           <!-- input contaienr -->
           <div
             class="border-b p-5 text-center space-y-8 md:space-y-14 md:p-9 md:px-14"
@@ -39,11 +39,12 @@
             <!-- header -->
             <div class="md:flex md:justify-between md:items-center">
               <p class="uppercase font-bold text-clGrayishBlue md:text-xl">
-                <span>100</span>K Pageviews
+                <span id="pageviews"></span> Pageviews
               </p>
               <!-- result preview -->
               <div class="hidden md:flex items-center justify-center space-x-2">
                 <span
+                  id="slider-value"
                   class="text-2xl font-bold text-clDarkDesaturatedBlue md:text-5xl"
                   >$16.00</span
                 ><span class="text-clGrayishBlue">/ month</span>
@@ -61,7 +62,9 @@
             />
             <!-- result preview -->
             <div class="flex md:hidden items-center justify-center space-x-2">
-              <span class="text-4xl font-bold text-clDarkDesaturatedBlue"
+              <span
+                id="slider-value"
+                class="text-4xl font-bold text-clDarkDesaturatedBlue"
                 >$16.00</span
               ><span class="text-clGrayishBlue">/ month</span>
             </div>
@@ -74,7 +77,11 @@
               <!-- switch contaienr -->
               <label class="switch relative inline-block">
                 <!-- checkbox -->
-                <input class="opacity-0 w-0 h-0" type="checkbox" />
+                <input
+                  id="switcher"
+                  class="opacity-0 w-0 h-0"
+                  type="checkbox"
+                />
                 <!-- switch overlay -->
                 <span
                   class="checkbox-slider bg-clPaleBlue cursor-pointer absolute inset-0 rounded-full before:rounded-full before:absolute before:left-0 before:top-0 before:bg-white"
