@@ -613,6 +613,10 @@ video {
   width: 0px;
 }
 
+.w-2\/3 {
+  width: 66.666667%;
+}
+
 .w-full {
   width: 100%;
 }
@@ -753,9 +757,9 @@ video {
   padding: 1px;
 }
 
-.px-14 {
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .px-2 {
@@ -780,6 +784,18 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
+.pb-32 {
+  padding-bottom: 8rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
 .text-center {
@@ -935,7 +951,7 @@ main {
 }
 
 .form-content {
-  box-shadow: 0 1rem 2rem hsla(225, 20%, 60%, 0.385);
+  box-shadow: 0 1rem 2rem hsla(225, 20%, 60%, 0.274);
 }
 
 /* slider */
@@ -955,8 +971,8 @@ main {
   z-index: 2;
   -webkit-appearance: none;
   appearance: none;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.7rem;
+  height: 2.7rem;
   border-radius: 50%;
   background: url('../images/icon-slider.svg') center/60% no-repeat;
   background-color: var(--cl-StrongCyan);
@@ -1063,6 +1079,10 @@ input:checked+.checkbox-slider:before {
     display: none;
   }
 
+  .md\:w-56 {
+    width: 14rem;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -1103,6 +1123,24 @@ input:checked+.checkbox-slider:before {
     margin-bottom: calc(3.5rem * var(--tw-space-y-reverse));
   }
 
+  .md\:space-y-10 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
+  }
+
+  .md\:space-y-8 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+  }
+
+  .md\:space-y-9 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(2.25rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(2.25rem * var(--tw-space-y-reverse));
+  }
+
   .md\:p-9 {
     padding: 2.25rem;
   }
@@ -1115,6 +1153,10 @@ input:checked+.checkbox-slider:before {
   .md\:px-14 {
     padding-left: 3.5rem;
     padding-right: 3.5rem;
+  }
+
+  .md\:pr-4 {
+    padding-right: 1rem;
   }
 
   .md\:text-left {
