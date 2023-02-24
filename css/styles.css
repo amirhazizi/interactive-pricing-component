@@ -1073,10 +1073,6 @@ input:checked+.checkbox-slider:before {
 }
 
 @media (min-width: 768px) {
-  .md\:-mt-5 {
-    margin-top: -1.25rem;
-  }
-
   .md\:inline-block {
     display: inline-block;
   }
