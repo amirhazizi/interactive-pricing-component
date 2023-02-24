@@ -713,14 +713,14 @@ video {
   background-color: hsl(224 65% 95% / var(--tw-bg-opacity));
 }
 
+.bg-clLightGrayishBlue_2 {
+  --tw-bg-opacity: 1;
+  background-color: hsl(223 50% 87% / var(--tw-bg-opacity));
+}
+
 .bg-clLightRed {
   --tw-bg-opacity: 1;
   background-color: hsl(15 100% 70% / var(--tw-bg-opacity));
-}
-
-.bg-clPaleBlue {
-  --tw-bg-opacity: 1;
-  background-color: hsl(226 100% 87% / var(--tw-bg-opacity));
 }
 
 .bg-clVeryPaleBlue {
@@ -934,6 +934,10 @@ main {
   }
 }
 
+.form-content {
+  box-shadow: 0 1rem 2rem hsla(225, 20%, 60%, 0.385);
+}
+
 /* slider */
 
 #slider {
@@ -957,12 +961,12 @@ main {
   background: url('../images/icon-slider.svg') center/60% no-repeat;
   background-color: var(--cl-StrongCyan);
   cursor: pointer;
-  box-shadow: 0 15px 25px var(--cl-SoftCyan);
+  box-shadow: 0 1rem 2rem .45rem var(--cl-SoftCyan);
 }
 
 #slider::-webkit-slider-thumb:hover {
   opacity: .9;
-  filter: brightness(95%);
+  filter: brightness(110%);
 }
 
 #slider::-webkit-slider-thumb:active {
@@ -1004,11 +1008,7 @@ main {
 }
 
 input:checked+.checkbox-slider {
-  background-color: #2196F3;
-}
-
-input:focus+.checkbox-slider {
-  box-shadow: 0 0 1px #2196F3;
+  background: var(--cl-StrongCyan);
 }
 
 input:checked+.checkbox-slider:before {
@@ -1041,38 +1041,16 @@ input:checked+.checkbox-slider:before {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.after\:absolute::after {
-  content: var(--tw-content);
-  position: absolute;
-}
-
-.after\:left-0::after {
-  content: var(--tw-content);
-  left: 0px;
-}
-
-.after\:top-0::after {
-  content: var(--tw-content);
-  top: 0px;
-}
-
-.after\:h-full::after {
-  content: var(--tw-content);
-  height: 100%;
-}
-
-.after\:rounded-lg::after {
-  content: var(--tw-content);
-  border-radius: 0.5rem;
-}
-
-.after\:bg-clSoftCyan::after {
-  content: var(--tw-content);
+.hover\:bg-clStrongCyan:hover {
   --tw-bg-opacity: 1;
-  background-color: hsl(174 77% 80% / var(--tw-bg-opacity));
+  background-color: hsl(174 86% 45% / var(--tw-bg-opacity));
 }
 
 @media (min-width: 768px) {
+  .md\:-mt-6 {
+    margin-top: -1.5rem;
+  }
+
   .md\:inline-block {
     display: inline-block;
   }

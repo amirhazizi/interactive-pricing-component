@@ -35,8 +35,6 @@ main {
     max-width: 400px;
 }
 
-
-
 .header {
     background: url('../images/pattern-circles.svg') center/35% no-repeat;
     height: 12rem;
@@ -70,6 +68,10 @@ main {
     }
 }
 
+.form-content {
+    box-shadow: 0 1rem 2rem hsla(225, 20%, 60%, 0.385);
+}
+
 /* slider */
 #slider {
     -webkit-appearance: none;
@@ -92,18 +94,19 @@ main {
     background: url('../images/icon-slider.svg') center/60% no-repeat;
     background-color: var(--cl-StrongCyan);
     cursor: pointer;
-    box-shadow: 0 15px 25px var(--cl-SoftCyan);
+    box-shadow: 0 1rem 2rem .45rem var(--cl-SoftCyan);
 }
 
 
 #slider::-webkit-slider-thumb:hover {
     opacity: .9;
-    filter: brightness(95%);
+    filter: brightness(110%);
 }
 
 #slider::-webkit-slider-thumb:active {
     background-blend-mode: overlay;
     background-color: rgb(3, 150, 150);
+
 }
 
 #slider::-moz-range-thumb {
@@ -137,15 +140,13 @@ main {
     width: 1.2rem;
     transform: translate(30%, 25%);
     transition: .4s;
+
 }
 
 input:checked+.checkbox-slider {
-    background-color: #2196F3;
+    background: var(--cl-StrongCyan);
 }
 
-input:focus+.checkbox-slider {
-    box-shadow: 0 0 1px #2196F3;
-}
 
 input:checked+.checkbox-slider:before {
     transform: translate(175%, 25%);
